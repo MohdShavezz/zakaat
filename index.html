@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakat Calculation</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h4 style="color: blueviolet;">Zaqat Calculation:</h4>
+    <form>
+
+        <div id="content">
+            <div id="content-left">
+                <label for="gold">Gold</label>
+                <input type="text" id="gold" placeholder="grams">
+                <label for="silver">Silver</label>
+                <input type="text" id="silver" placeholder="grams">
+                <label for="cash">Cash</label>
+                <input type="text" id="cash" placeholder="rupees">
+            </div>
+            <div id="content-right">
+                <label for="goldPrice">Current Gold Rate of 10gm</label>
+                <input type="text" id="goldPrice" placeholder="xxxxx.x ₹ ">
+                <label for="silverPrice">Current Silver Rate of 10gm</label>
+                <input type="text" id="silverPrice" placeholder="xxx.x ₹ ">
+            </div>
+        </div>
+        <p id="result" style="text-align: center;">To give:</p>
+        <div id="btn">
+            <button type="submit" id="btnClick">Calculate</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+    <div class="accordion" id="accordionExample" style="width: 70%;margin: auto;">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne" style="padding: 0.4rem 1.25rem;">
+                    Check Calculation
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body" >
+                    <input type="button" onclick="printDiv('acc')" value="Print" style="float:right;padding: 0 0.4rem;font-size: 12px;"/>
+                    <div class="accordionbody" id="acc">
+
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <a href="https://www.google.com/search?q=gold+price+now">Current Gold Rate</a> <br>
+    <a href="https://economictimes.indiatimes.com/commoditysummary/symbol-SILVER.cms">Current Silver Rate</a>
+
+
+
+   <script src="script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
